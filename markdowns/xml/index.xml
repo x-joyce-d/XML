@@ -1,17 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-    <中国>
-        <北京>
-            <海淀></海淀>
-            <丰台></丰台>
-        </北京>
-        <湖南>
-            <长沙></长沙>
-            <岳阳></岳阳>
-        </湖南>
-        <湖北>
-            <武汉></武汉>
-            <荆州></荆州>
-        </湖北>
-    </中国>
-
-。
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<catalog>
+  <cd>
+    <title>Empire Burlesque</title>
+    <artist>Bob Dylan</artist>
+    <country>USA</country>
+    <company>Columbia</company>
+    <price>10.90</price>
+    <year>1985</year>
+  </cd>
+.
+.
+.
+</catalog>
