@@ -5,9 +5,9 @@
 * 3.纯文本，有能力处理纯文本的软件都可以处理XML
 
 ## 2.作用（不同应用，不同平台间的共享和通信）
-* `数据分离`，数据能够独立存储在单独的XML文件中，（通过JavaScript，读取外部XML文件，更新数据内容）
-* `简化数据共享`，可作为一种简单的数据库，存储和检索数据（`以纯文本格式进行存储`)
-* `简化数据传输`，传输约定格式的文件（可通过各种不兼容的应用程序来读取数据）
+* `数据分离`:数据能够独立存储在单独的XML文件中，（通过JavaScript，读取外部XML文件，更新数据内容）
+* `简化数据共享`:可作为一种简单的数据库，存储和检索数据（`以纯文本格式进行存储`)
+* `简化数据传输`:传输约定格式的文件（可通过各种不兼容的应用程序来读取数据）
 
 ## 3.节点类型（XML DOM 是用于获取、更改、添加或删除 XML 元素的标准）
 * `声明节点`：XML声明放在XML的第一行（` <?xml version="1.0" encoding="UTF-8" ?>`）
@@ -45,7 +45,7 @@
  	- DOM解析会把XML文档加载到内存中，生成DOM树的元素都以`对象`的形式存在，操作这些对象就能够操作XML文档了（`可对XML文档进行增删改`）。
 
  	- SAX解析涉及 `解析器和事件处理器`，按照顺序对文档进行解析，当读到特定标签时，`自动调用相应的方法进行操作`（`处理大型文件`）
-	> 	public static void main(String[] args) throws Exception {
+	 	  public static void main(String[] args) throws Exception {
 	        //1.创建解析工厂
 					SAXParserFactoryfactory=SAXParserFactory.newInstance();
 	        //2.得到解析器
@@ -68,6 +68,7 @@
   	* 基于XML的DTD替代者
 
 ## 6.SGML,XML,XHTML,HTML,HTML5的关系
+![关系图](./img/1.png)
 * 1.SGML(Standard Generalized Markup Language)标准通用标记语言
 * 2.HTML是SGML的一个应用，XML是SGML的一个子集
 * 3.XHTML是基于XML格式编写的HTML，兼容性更好，语法上更加严格
