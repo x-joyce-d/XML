@@ -30,8 +30,8 @@
 	*   option (#PCDATA)      
 	*   textarea (#PCDATA)    
 	*   fieldset (#PCDATA | legend | %block; | form | %inline; | %misc;)*
-	*   legend %Inline;      <!-- fieldset label --
-	*   button %button.content;   <!-- push button --
+	*   legend %Inline;  -- （fieldset label）
+	*   button %button.content;   
 * `Tables`:
 	*   table
 	 (caption?, (col*|colgroup*), thead?, tfoot?, (tbody+|tr+))
