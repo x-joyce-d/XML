@@ -26,7 +26,7 @@
 * `address`:   address %Inline;
 * ` 分隔线`:   hr (空标签)
 * `预格式化文本`：  pre %pre.content;
-* `object`:  object (#PCDATA | param | %block; | form | %inline; | %misc;)*
+* `object`:  object ( param | %block; | form | %inline; | %misc;)*
 * `Images`:  img (空标签)
 * `map`:   map ((%block; | form | %misc;)+ | area+)
 * `Forms`:
@@ -36,7 +36,7 @@
 	*   optgroup (option)+   
 	*   option     
 	*   textarea     
-	*   fieldset (#PCDATA | legend | %block; | form | %inline; | %misc;)*
+	*   fieldset ( legend | %block; | form | %inline; | %misc;)*
 	*   legend %Inline;  
 	*   button %button.content;   
 * `Tables`:
