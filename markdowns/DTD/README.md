@@ -3,9 +3,7 @@
 ## 1.引用
 * <!DOCTYPE html 声明引用DTD,(HTML4.01基于SGML)
 
-## 2.XHTML 1.0 Strict（严格的）
-* `https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd`
-
+## 2.[XHTML 1.0 Strict（严格的](https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd)
 * `Document Structure`:   html (head, body)
 * ` Document Body`:   body %Block;
 * `Paragraphs`:   p %Inline;
@@ -17,7 +15,7 @@
 	*   dt %Inline;
 	*   dd %Inline;
 * `address`:   address %Inline;
-* ` Horizontal Rule`:   hr EMPTY
+* ` 分隔线`:   hr EMPTY
 * `预格式化文本`：  pre %pre.content;
 * `object`:  object (#PCDATA | param | %block; | form | %inline; | %misc;)*
 * `Images`:  img EMPTY
@@ -30,7 +28,7 @@
 	*   option (#PCDATA)      
 	*   textarea (#PCDATA)    
 	*   fieldset (#PCDATA | legend | %block; | form | %inline; | %misc;)*
-	*   legend %Inline;  -- （fieldset label）
+	*   legend %Inline;  
 	*   button %button.content;   
 * `Tables`:
 	*   table
@@ -45,5 +43,4 @@
 	*   th       %Flow;
 	*   td       %Flow;
 
-## 3.HTML 4.01 Strict（严格的）
-* `https://www.w3.org/TR/html4/strict.dtd`
+## 3.[HTML 4.01 Strict（严格的)](https://www.w3.org/TR/html4/strict.dtd)
