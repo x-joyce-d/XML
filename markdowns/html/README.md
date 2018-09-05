@@ -6,7 +6,7 @@
 ## 头部标签
 * `head`
 * `base` -为页面上的所有链接规定默认地址（单标签a/img/link/form）(href/target属性)
-* `link`
+* `link` -定义文档与外部资源的关系
 * `meta`
 * `style`
 * `title`

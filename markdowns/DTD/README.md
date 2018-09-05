@@ -34,8 +34,8 @@
 	*   label %Inline;      -  不能嵌套
 	*   select (optgroup|option)+   
 	*   optgroup (option)+   
-	*   option (#PCDATA)      
-	*   textarea (#PCDATA)    
+	*   option     
+	*   textarea     
 	*   fieldset (#PCDATA | legend | %block; | form | %inline; | %misc;)*
 	*   legend %Inline;  
 	*   button %button.content;   
