@@ -18,20 +18,17 @@
 	*   dd %Inline;
 * `address`:   address %Inline;
 * ` Horizontal Rule`:   hr EMPTY
-* `预格式化文本`：  pre %pre.content;  <!-- content is %Inline; excluding "img|object|big|small|sub|sup" -- 
+* `预格式化文本`：  pre %pre.content;
 * `object`:  object (#PCDATA | param | %block; | form | %inline; | %misc;)*
 * `Images`:  img EMPTY
 * `map`:   map ((%block; | form | %misc;)+ | area+)
 * `Forms`:
-	*   form %form.content;    <!-- forms shouldn't be nested --
-	* <!--
-  Each label must not contain more than ONE field
-  Label elements shouldn't be nested.
---   label %Inline;
-	*   select (optgroup|option)+   <!-- option selector --
-	*   optgroup (option)+    <!-- option group --
-	*   option (#PCDATA)      <!-- selectable choice --
-	*   textarea (#PCDATA)      <!-- multi-line text field --
+	*   form %form.content;  - 不能嵌套
+	*   label %Inline;      -  不能嵌套
+	*   select (optgroup|option)+   
+	*   optgroup (option)+   
+	*   option (#PCDATA)      
+	*   textarea (#PCDATA)    
 	*   fieldset (#PCDATA | legend | %block; | form | %inline; | %misc;)*
 	*   legend %Inline;      <!-- fieldset label --
 	*   button %button.content;   <!-- push button --
