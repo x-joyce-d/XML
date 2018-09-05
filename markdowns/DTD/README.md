@@ -1,9 +1,18 @@
 # DTD(HTML4.01)
 
-## 1.引用
-* `<!DOCTYPE html>`声明引用DTD,(HTML4.01基于SGML)
+##是什么(Document Type Definition)
+* 标准通用标记语言的文档类型说明，声明文档的解析类型
+* 定义了文档中的元素（标记、属性）和实体以及相互关系。
 
-## 2.[XHTML 1.0 Strict(严格的)](https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd)
+## 作用
+* 告诉标准通用标记解析器用什么文档标准来定义解析文档
+
+## 声明方式（HTML4.01基于SGML）
+1. `HTML 4.01 Strict DOCTYPE声明	`:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+2. `XHTML 1.0 Strict DOCTYPE声明`:<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+3. `HTML5声明`:<!DOCTYPE html>(不基于SGML)
+
+## [XHTML 1.0 Strict(严格的)](https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd)
 * `Document Structure`:   html (head, body)
 * ` Document Body`:   body %Block;
 * `Paragraphs`:   p %Inline;
@@ -43,4 +52,4 @@
 	*   th       %Flow;
 	*   td       %Flow;
 
-## 3.[HTML 4.01 Strict（严格的)](https://www.w3.org/TR/html4/strict.dtd)
+## [HTML 4.01 Strict（严格的)](https://www.w3.org/TR/html4/strict.dtd)

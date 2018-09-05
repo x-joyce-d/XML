@@ -72,7 +72,7 @@
 ---
 ## 图像
 * `figure-figcaption` -定义图文(通常作为单个单元被引用)-figcaption定义标题
-* `img`
+* `img` -单标签
 * `picture` -根据不同分辨率，让浏览器选择自己需要加载的图片
 * `audio` -音频
 * `video` -视频
@@ -82,7 +82,7 @@
 * `track` -音视频的子元素(空元素) text track（提供不同语言的字幕或不同的文本轨道）
 * `map` -area必须嵌套在其里边，规定图像区域
 * `embed`-插入各种多媒体
-* `iframe`
+* `iframe` -
 ---
 
 ## 绘图
