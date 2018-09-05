@@ -1,6 +1,6 @@
 # DTD(HTML4.01)
 
-##是什么(Document Type Definition)
+## 是什么(Document Type Definition)
 * 标准通用标记语言的文档类型说明，声明文档的解析类型
 * 定义了文档中的元素（标记、属性）和实体以及相互关系。
 
