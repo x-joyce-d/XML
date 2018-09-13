@@ -26,7 +26,7 @@ DTD(Document Type Definition)
 <!ELEMENT price (#PCDATA)>
 <!-- 内容为文本类型 -->
 <!ENTITY publisher "Microsoft Press">
-		<!-- 实体名称 -->
+		<!-- 实体声明 -->
 ]>
 <books>
 	<book>
@@ -40,7 +40,7 @@ DTD(Document Type Definition)
 		<price>￥99</price>
 	</book>
 	<pubinfo>Published by &publisher;</pubinfo>
-		<!-- 实体名称引用 -->
+		<!-- 实体引用 -->
 </books>
 ```
 ```
@@ -56,14 +56,26 @@ DTD(Document Type Definition)
 ### 元素声明
  <!ELEMENT 元素名称 (元素内容)>或<!ELEMENT 元素名称 类别>
 * __空元素__
+	- <!ELEMENT 元素名称 EMPTY>
 * __带有子元素__
+	- <!ELEMENT 元素名称 (子元素名称)>
+	-   <!ELEMENT 元素名称 (子元素名称1,子元素名称2,...)>
 * __内容为文本类型__
+	- <!ELEMENT 元素名称 (#PCDATA)>
 * __带有任何内容__
+	- <!ELEMENT 元素名称 ANY>
 * __子元素只出现一次__
+	- <!ELEMENT 元素名称 (子元素名称)>
 * __子元素出现零次或一次__
+	- <!ELEMENT 元素名称 (子元素名称?)>
+* __子元素出现零次或多次__
+	- <!ELEMENT 元素名称 (子元素名称*)>
 * __子元素出现一次或多次__
+	- <!ELEMENT 元素名称 (子元素名称+)>
 * __子元素为多选一__
+	- <!ELEMENT 元素名称 (子元素名称1|元素名称2|子元素名称3|...)>
 * __多种类型的子元素混合__
+	- <!ELEMENT book (name,author?,(price|press|date)*)>
 
 ### 属性声明
 * **一种值**
