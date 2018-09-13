@@ -93,6 +93,7 @@ XML DOM 是用于获取、更改、添加或删除 XML 元素的标准。
 		3.__使用命名空间__: xmlns:namespace-prefix="namespaceURL"
 		4.**默认的命名空间**：xmlns="namespaceURL"
 
+
 标记语言的演化
 ---
 
