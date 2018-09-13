@@ -28,6 +28,8 @@ XML DOM 是用于获取、更改、添加或删除 XML 元素的标准。
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../xslt/index.xsl"?>
 		<!-- 处理指令 -->
+<!ENTITY publisher "Microsoft Press">
+		<!-- 实体名称 -->
 <catalog>
 		<!-- 标签自定义 -->
   <cd>
@@ -40,6 +42,8 @@ XML DOM 是用于获取、更改、添加或删除 XML 元素的标准。
     <price>10.90</price>
     <year>1985</year>
   </cd>
+	<pubinfo>Published by &publisher;</pubinfo>
+		<!-- 实体名称引用 -->
 	<note date="08/08/2008">
 		<!-- 属性 必加引号-->
 		<div>
@@ -57,7 +61,7 @@ XML DOM 是用于获取、更改、添加或删除 XML 元素的标准。
 	   <f:width>80</f:width>
 	   <f:length>120</f:length>
 	 </f:table>
-	 <![CDATA[我们是共产主义接班人]]>
+	 <![CDATA[我们是<共产主>义“接班人”]]>
  		<!-- CDATA特殊节点 -->
 .
 .
@@ -74,13 +78,17 @@ XML DOM 是用于获取、更改、添加或删除 XML 元素的标准。
 * **注释节点**：注释
 * **处理指令**:指挥解析引擎如何解析XML文档内容
 	- eg:XML声明/对应用程序特定的数据编码
-* **文档片段**：document.createDocumentFragment
+* **文档片段**：`document.createDocumentFragment`
 	- 充当临时的容器，向其中插入DOM元素，再把其插入DOM树中，在DOM树中，文档片段会被替换为它的子元素
 	- 存在于内存中，不会重绘页面，可优化性能。
-* **实体/实体引用**:
-	- 引用特殊字符：`&lt;` >,`&gt;`< ,`&amp`&,`apos`'',`quot`“”
-* **CDATA**（character data-字符数据）
+* **实体/实体引用节点**:
+	-  <!ENTITY name "value">
+* **实体名称节点**：
+	- 在实体声明中定义的名称，在XML中使用时的名称
+* **CDATA**（包含大量转义字符时）
 	* 特殊节点，包含不应被解析器分析的信息
+* **DTD声明节点**：
+	- DTD中声明的符号
 * **语法规则**
 	* 可自定义标签/文档结构
 	* 必有根元素
@@ -89,6 +97,7 @@ XML DOM 是用于获取、更改、添加或删除 XML 元素的标准。
 	* 正确的嵌套
 	* 属性必加引号
 	* 实体引用
+ 		- 引用特殊字符：`&lt;` >,`&gt;`< ,`&amp`&,`apos`'',`quot`“”
 	* 注释
 	* 命名空间
 		1.__命名冲突__：两个不同的文档使用相同的元素名时，会发生冲突
