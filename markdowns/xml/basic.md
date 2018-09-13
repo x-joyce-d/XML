@@ -35,7 +35,6 @@ XML DOM 是用于获取、更改、添加或删除 XML 元素的标准。
   <cd>
     <title>Empire Burlesque</title>
 		<message>if salary &lt; 1000 then</message>
-		<!-- 实体引用 -->
     <artist>Bob Dylan</artist>
     <country>USA</country>
     <company>Columbia</company>
@@ -49,8 +48,8 @@ XML DOM 是用于获取、更改、添加或删除 XML 元素的标准。
 		<div>
 			<p>
 			this is a paragraph!
-		<!-- 必须正确的嵌套 -->
 			</p>
+		<!-- 必须正确的嵌套 -->
 		</div>
 		<to>George</to>
 		<from>John</from>
@@ -61,7 +60,7 @@ XML DOM 是用于获取、更改、添加或删除 XML 元素的标准。
 	   <f:width>80</f:width>
 	   <f:length>120</f:length>
 	 </f:table>
-	 <![CDATA[我们是<共产主>义“接班人”]]>
+	 <![CDATA[‘我们’是<共产主>义“接班人”]]>
  		<!-- CDATA特殊节点 -->
 .
 .
@@ -87,8 +86,8 @@ XML DOM 是用于获取、更改、添加或删除 XML 元素的标准。
 	- 在实体声明中定义的名称，在XML中使用时的名称
 * **CDATA**（包含大量转义字符时）
 	* 特殊节点，包含不应被解析器分析的信息
-* **DTD声明节点**：
-	- DTD中声明的符号
+<!-- * **DTD声明节点**： -->
+	<!-- - DTD中声明的符号 -->
 * **语法规则**
 	* 可自定义标签/文档结构
 	* 必有根元素
