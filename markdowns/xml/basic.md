@@ -27,8 +27,9 @@ XML DOM 是用于获取、更改、添加或删除 XML 元素的标准。
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../xslt/index.xsl"?>
+		<!-- 处理指令 -->
 <catalog>
-<!-- 标签自定义 -->
+		<!-- 标签自定义 -->
   <cd>
     <title>Empire Burlesque</title>
 		<message>if salary &lt; 1000 then</message>
@@ -40,11 +41,11 @@ XML DOM 是用于获取、更改、添加或删除 XML 元素的标准。
     <year>1985</year>
   </cd>
 	<note date="08/08/2008">
-	<!-- 属性 必加引号-->
+		<!-- 属性 必加引号-->
 		<div>
 			<p>
 			this is a paragraph!
-			<!-- 必须正确的嵌套 -->
+		<!-- 必须正确的嵌套 -->
 			</p>
 		</div>
 		<to>George</to>
@@ -52,10 +53,12 @@ XML DOM 是用于获取、更改、添加或删除 XML 元素的标准。
 	</note>
 	<f:table xmlns:f="http://www.w3school.com.cn/furniture">
    	<f:name>African Coffee Table</f:name>
-	 		<!-- 命名空间 ：为table标签添加了一个带有家具信息的前缀f:-->
+ 		<!-- 命名空间 ：为table标签添加了一个带有家具信息的前缀f:-->
 	   <f:width>80</f:width>
 	   <f:length>120</f:length>
 	 </f:table>
+	 <![CDATA[我们是共产主义接班人]]>
+ 		<!-- CDATA特殊节点 -->
 .
 .
 .
@@ -69,7 +72,7 @@ XML DOM 是用于获取、更改、添加或删除 XML 元素的标准。
 * **文本节点**：
 	- 元素或属性中的文本内容
 * **注释节点**：注释
-* **处理指令**:用<’?和?>定界符包起来
+* **处理指令**:指挥解析引擎如何解析XML文档内容
 	- eg:XML声明/对应用程序特定的数据编码
 * **文档片段**：
 	- 充当临时的容器，可避免多次直接向DOM添加元素时，浏览器多次渲染
@@ -77,7 +80,6 @@ XML DOM 是用于获取、更改、添加或删除 XML 元素的标准。
 	- 引用特殊字符：`&lt;` >,`&gt;`< ,`&amp`&,`apos`'',`quot`“”
 * **CDATA**（character data-字符数据）
 	* 特殊节点，包含不应被解析器分析的信息
-	* eg：CDATA <![CDATA[文本内容]]>
 * **语法规则**
 	* 可自定义标签/文档结构
 	* 必有根元素
