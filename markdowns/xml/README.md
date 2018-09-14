@@ -5,6 +5,7 @@ XML（Extensible Markup Language）
 ---
 
 1. [XML 基础知识](./basic.md)
+1. [XML DOM](./dom.md) 
 1. [DTD](./dtd.md)
 1. [Schema](http://www.w3school.com.cn/schema/index.asp)
 1. [XML DOM](http://www.w3school.com.cn/xmldom/index.asp)
