@@ -124,3 +124,70 @@ XML DOM 是用于获取、更改、添加或删除 XML 元素的标准。
 	- 相比XHTML新增了一些特性，又有所保留
 		- 制定相应的容错体系
 		- 严格模式（不太理想的XHTML）和宽松模式
+```
+				<!-- XML实例 -->
+ <?xml version="1.0" encoding="utf-8" ?>
+ <country>
+   <name>中国</name>
+   <province>
+     <name>黑龙江</name>
+     <citys>
+       <city>哈尔滨</city>
+       <city>大庆</city>
+     </citys>  　　
+   </province>
+   <province>
+     <name>广东</name>
+     <citys>
+       <city>广州</city>
+       <city>深圳</city>
+       <city>珠海</city>
+     </citys> 　　
+   </province>
+   <province>
+     <name>台湾</name>
+     <citys>
+       　<city>台北</city>
+       　<city>高雄</city>
+     </citys>　
+   </province>
+   <province>
+     <name>新疆</name>
+     <citys>
+      <city>乌鲁木齐</city>
+     </citys>
+   </province>
+ </country>
+```
+```
+<!-- ---JSON实例--- -->
+var country =
+	 {
+			name: "中国",
+			provinces: [
+			 { name: "黑龙江", citys: { city: ["哈尔滨", "大庆"]} },
+			 { name: "广东", citys: { city: ["广州", "深圳", "珠海"]} },
+			 { name: "台湾", citys: { city: ["台北", "高雄"]} },
+			 { name: "新疆", citys: { city: ["乌鲁木齐"]} }
+			 ]
+	 }
+```
+XML与JSON的区别
+---
+1. **数据体积**
+	* JSON格式简单，易于读写，占用带宽小；
+	* XML格式复杂，文件庞大，占用带宽大；
+1. **数据交互**
+	* JSON支持多种语言，便于服务器进行解析()；
+	* XML:客户端和服务器端都需花费大量代码来解析(DOM/SAX)；
+1. **维护**
+	* JSON格式可直接为服务器端代码使用，简化代码开发量，易于维护；
+	* XML客户端不同浏览器之间解析方式不一，需重复编写代码；
+1. **可读性**
+	* XML的可读性高于JSON
+1. **推广**
+	* JSON推广还处于初级阶段；
+	* XML推广深入人心，通用性强；
+1. **定义**
+	* JSON是数据
+	* XML是文本标记语言
