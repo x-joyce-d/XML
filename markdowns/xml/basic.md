@@ -99,10 +99,10 @@ XML DOM 是用于获取、更改、添加或删除 XML 元素的标准。
  		- 引用特殊字符：`&lt;` >,`&gt;`< ,`&amp`&,`apos`'',`quot`“”
 	* 注释
 	* 命名空间
-		1.__命名冲突__：两个不同的文档使用相同的元素名时，会发生冲突
-		2.__使用前缀避免冲突__: eg:(<table> 元素中<h:table><f:table>)
-		3.__使用命名空间__: xmlns:namespace-prefix="namespaceURL"
-		4.**默认的命名空间**：xmlns="namespaceURL"
+		1. __命名冲突__：两个不同的文档使用相同的元素名时，会发生冲突
+		2. __使用前缀避免冲突__: eg:(<table> 元素中<h:table><f:table>)
+		3. __使用命名空间__: xmlns:namespace-prefix="namespaceURL"
+		4. **默认的命名空间**：xmlns="namespaceURL"
 
 
 
