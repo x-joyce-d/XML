@@ -1,18 +1,34 @@
 <html>
-	<head>
-		<script type="text/javascript" src="/example/xdom/loadxmldoc.js"></script>
-	</head>
-	<body>
-		<books>
-			<title></title>
-			<title>
-				<a>123</a>
-			</title>
-		</books>
-		<script type="text/javascript">
-			xmlDoc = loadXMLDoc("/example/xdom/books.xml");
-			x = xmlDoc.getElementsByTagName("title");
-			document.write(x[2].childNodes[0].nodeValue);
-		</script>
-	</body>
+  <head>
+    <script type="text/javascript" src="/example/xdom/loadxmldoc.js"></script>
+  </head>
+  <body>
+    <books>
+      <title></title>
+      <title>
+        <a>123</a>
+      </title>
+    </books>
+    <script type="text/javascript">
+      xmlDoc = loadXMLDoc("/example/xdom/books.xml");
+      x = xmlDoc.getElementsByTagName("title");
+      document.write(x[2].childNodes[0].nodeValue);
+    </script>
+    <script type="text/javascript">
+      function loadXml(str) {
+      if (str == null) {
+       return null;
+      }
+      var doc = str;
+      try{
+       doc = createXMLDOM();
+       doc.async = false;
+       doc.loadXML(str);
+      }catch(e){
+       doc = $.parseXML(str);
+      }
+      return doc;
+    }
+    </script>
+  </body>
 </html>
