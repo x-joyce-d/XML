@@ -14,7 +14,7 @@
 ---
 ## `link`
 * `integrity` - integrity 要求开启SRI，允许浏览器检查文件源，SRI要求被请求的资源,定义必须匹配的资源，避免加载恶意的资源，即防止加载不匹配的内容
-	- `checksum` -		<link rel="stylesheet" href="./css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	- `checksum` -	<link rel="stylesheet" href="./css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 * `crossorigin` - 发起跨域请求
 ## 语义化标签
 * `hgroup`
