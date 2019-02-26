@@ -1,4 +1,4 @@
-# HTML
+# [HTML](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element)
 ---
 ---
 ## Main root
@@ -110,10 +110,10 @@
 * `fieldset` -对表单进行分组
 * `legend` -定义表单标题
 * `label` -标题
-* `input` -各种类型（button/number/password/checkbox/radio/file/hidden/email/color/image/month/reset/range/search/submit/tel/text/time/url/week/datetime/date/datetime-local）
+* `input` -各种类型（button/number/password/checkbox/radio/file/hidden/email/color/image/month/reset/range/search/submit/tel/text/time/url/week/date/datetime-local）
 * `textarea` -多行纯文本编辑
-* `meter` -度量标签，仅用于已知范围任一标量值或分数值（无后代元素）
-* `progress` -进度条（无后代元素）
+* `meter` -度量标签，仅用于已知范围任一标量值或分数值（无后代元素，有警告）
+* `progress` -进度条（无后代元素，无警告）
 * `output` -滑块（值在0-100之间）显示input的值
 * `select` -下拉列表
 * `optgroup` -(有很多选项需要组合时-项目组)
