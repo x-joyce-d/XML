@@ -1,20 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
-  <link rel="preload" href="style.css" as="style">
-  <link rel="preload" href="main.js" as="script">
-  <link rel="stylesheet" href="style.css">
+	<link rel="preload" href="style.css" as="style">
+	<link rel="preload" href="main.js" as="script">
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+		var a = [];
+		for (let i = 0; i < 10; i++) {
+      // debugger
+			a[i] = function() {
+				console.log(i);
+			};
+		}
+		a[1](); // 1
+    // let不存在变量提升，暂时性死区，不允许重复声明
+    // 块及作用域：防止内层变量覆盖外层变量；防止循环变量泄露为全局变量
+    // 外层代码块不受内层代码块的影响
+    //外层作用域无法读取内层作用域的变量
+    //立即执行函数表达式xx===>块级作用域
+    //避免在块及作用域中声明函数（如有必要，已函数表达式代之）====》只在使用大括号的前提下成立
+    //const一声明即赋值
+    //顶层对象（浏览器环境window对象，node环境global环境）===global.a/this.a
+//函數
+    //允许为函数的参数设置默认值
+    //参数变量是默认声明的，不能再次声明
+    //使用参数默认值时，函数不能有同名参数
+    //函数参数每次都重新计算默认值表达式的值
+    //参数默认值的位置为为参数（undefined===》触发默认值）
+    //函数参数指定默认值后，length属性（函数预期传入的参数个数）将失真
+//...rest
+    //函数的length属性不包括rest参数
+    //rest参数只能是最后一个参数
+//函数的name属性返回其函数名
+//箭头函数
+    //()内写参数，{}代码块
+	</script>
 </head>
+
 <body>
-<h1>hello  world</h1>
-<noscript>
-  <!-- anchor linking to external file -->
-  <a href="http://www.mozilla.com/">External Link</a>
-</noscript>
-<p>Rocks!</p>
+	<h1>hello world</h1>
+	<noscript>
+		<!-- anchor linking to external file -->
+		<a href="http://www.mozilla.com/">External Link</a>
+	</noscript>
+	<p>Rocks!</p>
 </body>
+
 </html>
